@@ -7,8 +7,10 @@
   tasks:
     - name: Update and upgrade packages
       apt:
-        update_cache: yes
-        upgrade: yes
+        update_cache: true
+        allow_change_held_packages: false
+        upgrade: false
+        
 
 
     - name: Check if a reboot is required
