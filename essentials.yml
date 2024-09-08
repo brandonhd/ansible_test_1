@@ -1,0 +1,9 @@
+---
+- name: Install fish shell and Nala frontend
+  host: ubuntu
+  gather_facts: yes
+  become: yes
+
+  tasks: 
+    - name: Install nala frontent for apt
+      
