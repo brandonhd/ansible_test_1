@@ -10,6 +10,12 @@
         update_cache: true
         allow_change_held_packages: false
         upgrade: false
+
+
+    - name: Update all packages to their latest version
+      ansible.builtin.apt:
+        name: "*"
+        state: latest
         
 
 
